@@ -15,9 +15,12 @@ let numberOfClicks = 0;
 const clickHandler = function (text) {
     numberOfClicks = numberOfClicks + 1;
     console.log('numberOfClicks', numberOfClicks);
-    alert(text);
-};
-
+    if (numberOfClicks <= 3) {
+        alert(text);
+    } else {
+        alert("Drink in moderation-- no more cocktails for you!");
+    }
+}
 // Declare brainSkills array below this line
 
 document.addEventListener("DOMContentLoaded", function (event) {
