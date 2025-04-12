@@ -4,20 +4,24 @@ const addDevSkill = function (skill) {
     document.getElementById("coding-section").appendChild(listItem);
 };
 
-const <verb> = function (item) {
+const drink = function (item) {
    return 'I\'d like a ' + item + ', please!';
 };
  
-const <noun> = 'cocktail';
+const Stephanie = 'cocktail';
+
+let numberOfClicks = 0;
 
 const clickHandler = function (text) {
-
+    numberOfClicks = numberOfClicks + 1;
+    console.log('numberOfClicks', numberOfClicks);
+    alert(text);
 };
 
 // Declare brainSkills array below this line
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-   document.getElementById('cocktail-section').innerHTML = <verb>(<noun>);
+   document.getElementById('cocktail-section').innerHTML = drink(Stephanie);
 
 });
